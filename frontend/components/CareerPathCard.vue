@@ -42,7 +42,7 @@
             </div>
           </div>
           <section class="content_section">
-            <h2 class="content_title">キャリアチェンジを考えた理由</h2>
+            <h2 class="content_title">このキャリアを選んだ理由</h2>
             <p :class="{'content':isDetail === false}">
               {{content1}}
             </p>
