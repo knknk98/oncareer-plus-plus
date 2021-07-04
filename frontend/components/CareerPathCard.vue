@@ -43,21 +43,24 @@
           </div>
           <section class="content_section">
             <h2 class="content_title">コンテンツ1</h2>
-            <p>
+            <p :class="{'content':isDetail === false}">
               {{content1}}
             </p>
+            <NuxtLink v-if="isDetail==false" to="/details">もっと見る</NuxtLink>
           </section>
           <section class="content_section">
             <h2 class="content_title">コンテンツ2</h2>
-            <p>
+            <p :class="{'content':isDetail === false}">
               {{content2}}
             </p>
+            <NuxtLink v-if="isDetail==false" to="/details">もっと見る</NuxtLink>
           </section>
           <section class="content_section">
             <h2 class="content_title">コンテンツ3</h2>
-            <p>
+            <p :class="{'content':isDetail === false}">
               {{content3}}
             </p>
+            <NuxtLink v-if="isDetail==false" to="/details">もっと見る</NuxtLink>
           </section>
           <hr class="my-3">
         </v-card-text>
@@ -170,5 +173,13 @@ export default Vue.extend({
 }
 .content_section{
   margin: 40px 0;
+}
+
+.content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-all;;  
 }
 </style>
