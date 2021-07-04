@@ -37,6 +37,9 @@
         </v-card>
       </v-dialog>    
       <CareerPathCard :is-detail=false />
+      <CareerPathCard :is-detail=false />
+      <CareerPathCard :is-detail=false />
+      <CareerPathCard :is-detail=false />
     </v-col>
   </v-row>
 </template>

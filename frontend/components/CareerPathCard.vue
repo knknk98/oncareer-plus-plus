@@ -42,21 +42,21 @@
             </div>
           </div>
           <section class="content_section">
-            <h2 class="content_title">コンテンツ1</h2>
+            <h2 class="content_title">キャリアチェンジを考えた理由</h2>
             <p :class="{'content':isDetail === false}">
               {{content1}}
             </p>
             <NuxtLink v-if="isDetail==false" to="/details">もっと見る</NuxtLink>
           </section>
           <section class="content_section">
-            <h2 class="content_title">コンテンツ2</h2>
+            <h2 class="content_title">重視したポイント</h2>
             <p :class="{'content':isDetail === false}">
               {{content2}}
             </p>
             <NuxtLink v-if="isDetail==false" to="/details">もっと見る</NuxtLink>
           </section>
           <section class="content_section">
-            <h2 class="content_title">コンテンツ3</h2>
+            <h2 class="content_title">他に検討したキャリア</h2>
             <p :class="{'content':isDetail === false}">
               {{content3}}
             </p>
