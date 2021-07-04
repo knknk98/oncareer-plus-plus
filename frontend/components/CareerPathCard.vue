@@ -10,7 +10,7 @@
               <div class="industry">{{afterJobType}}</div>
             </div>
           </div>
-          <v-simple-table class="job_type_table">
+          <v-simple-table v-if="isDetail" class="job_type_table">
             <tbody>
             <tr>
               <td class="job_type_title">退社時の職種</td>
