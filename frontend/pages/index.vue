@@ -35,11 +35,11 @@
             <v-spacer></v-spacer>
           </v-card-actions>
         </v-card>
-      </v-dialog>    
+      </v-dialog>   
+      <CareerPathCard :is-detail=false user-attr="社会人1年 | 男性" before-comp-name="工学部" after-comp-name="FUNDBOOK" before-job-type="大学"/>
+      <CareerPathCard :is-detail=false user-attr="社会人3年未満 | 女性" before-comp-name="文学部" after-comp-name="Google" before-job-type="大学" />
       <CareerPathCard :is-detail=false />
-      <CareerPathCard :is-detail=false user-attr="社会人1年 | 男性" before-comp-name="工学部" after-comp-ame="FUNDBOOK" before-job-type="大学"/>
-      <CareerPathCard :is-detail=false user-attr="社会人3年未満 | 女性" before-comp-name="リクルートスタッフィング" after-comp-ame="TENGA" before-job-type="広報職" />
-      <CareerPathCard :is-detail=false user-attr="社会人3〜5年 | 女性" before-comp-name="リクルートスタッフィング" after-comp-ame="サイバーエージェント" before-job-type="営業" />
+      <CareerPathCard :is-detail=false user-attr="社会人3〜5年 | 女性" before-comp-name="リクルートスタッフィング" after-comp-name="サイバーエージェント" before-job-type="営業" />
     </v-col>
   </v-row>
 </template>
