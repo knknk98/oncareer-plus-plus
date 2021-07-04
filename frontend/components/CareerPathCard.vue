@@ -1,5 +1,5 @@
 <template>
-      <v-card>
+      <v-card class="my-10" >
         <v-card-text>
           <div class="flex-row d-flex">
             <div>

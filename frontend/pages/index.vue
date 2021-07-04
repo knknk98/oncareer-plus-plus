@@ -37,9 +37,9 @@
         </v-card>
       </v-dialog>    
       <CareerPathCard :is-detail=false />
-      <CareerPathCard :is-detail=false />
-      <CareerPathCard :is-detail=false />
-      <CareerPathCard :is-detail=false />
+      <CareerPathCard :is-detail=false user-attr="社会人3〜5年 | 男性" before-comp-name="キーエンス" after-comp-ame="FUNDBOOK"/>
+      <CareerPathCard :is-detail=false user-attr="社会人3年未満 | 女性" before-comp-name="リクルートスタッフィング" after-comp-ame="TENGA" />
+      <CareerPathCard :is-detail=false user-attr="社会人3〜5年 | 女性" before-comp-name="リクルートスタッフィング" after-comp-ame="サイバーエージェント" />
     </v-col>
   </v-row>
 </template>
