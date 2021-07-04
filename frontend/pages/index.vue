@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <h1>転職体験談一覧（1156件）</h1>
+      <h2>キャリア選択体験談一覧（1156件）</h2>
       <v-dialog
         v-model="dialog"
         width="500"
@@ -20,8 +20,9 @@
             絞り込む
           </v-chip>
         </template>
-
         <v-card>
+          <FilterMenu section=Before />
+          <FilterMenu section=After />
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn
@@ -43,19 +44,17 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
 export type DataType = {
   dialog: boolean
+  filter1:String
 }
 export default Vue.extend({
   data(): DataType {
     return {
-      dialog: false
+      dialog: false,
+      filter1:"before"
     }
   },
-  methods: {
-    openModal():any{
-      alert("OK")
-    }
-  }
 })
 </script>
